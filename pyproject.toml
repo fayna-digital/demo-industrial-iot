@@ -1,0 +1,32 @@
+[project]
+name = "demo-industrial-iot"
+version = "0.1.0"
+description = "Industrial IoT Bridge — Odoo 17 MRP integration demo (Modbus TCP + XML-RPC)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Volodymyr Shevchenko", email = "admin@fayna.agency" }]
+maintainers = [{ name = "Fayna Digital", email = "admin@fayna.agency" }]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6",
+  "mypy>=1.11",
+  "pytest>=8",
+  "pre-commit>=3.7",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

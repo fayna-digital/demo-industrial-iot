@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Local SQLite buffer — never commit runtime data
+*.db
+production_buffer.db
+
+# Logs / runtime artifacts
+*.log
+logs/
+
+# Secrets — NEVER commit
+.env
+.env.*
+secrets.env
+*.pem
+*.key
+*.crt
+*_token*
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store

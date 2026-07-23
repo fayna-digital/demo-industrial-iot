@@ -1,0 +1,5 @@
+# Industrial IoT Bridge — runtime dependencies
+# Slim, curated set. Odoo integration (odoo_api.py) uses stdlib xmlrpc.client —
+# only the Modbus TCP side needs a third-party package.
+
+pymodbus>=3.8   # Modbus TCP client (scanner.py) and server simulator (plc_simulator.py)
